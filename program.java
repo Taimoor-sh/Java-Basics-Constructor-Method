@@ -8,16 +8,15 @@ public class program {
     int x = 1 ; int y = 0 ;
     do {
       Scanner sc = new Scanner(System.in);
-      System.out.println("Please Enter the number :");
-      int i = sc.nextInt(); 
-       program num = new program(i);  
-       num.sqrt(i);
+      System.out.println("Enter Your Name :");
+      String i = sc.nextLine(); 
+      System.out.println("Enter Your Age :");
+      int j = sc.nextInt(); 
+       program num = new program(j, i);
     } while (x>y);
   }
-  program(int i){
-    System.out.println("You have Entered The Number : " + i );
-  }
-  public static void sqrt(int i) {
-    System.out.println("Square Root of Entered Number is : " + Math.sqrt(i) );
+  program(int i , String j){
+    System.out.println("Your Name is : " + j );
+    System.out.println("Your Age is : " + i );
   }
 }
